@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frevibe</title>
+    <link rel="stylesheet" href="./css/sub1_shop.css">
+
+    <!-- js 연결 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="./js/sub1_shop_script.js"></script>
+
+    <!-- 웹폰트 적용 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- favicon 적용 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/frevibe_favicon.png">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+
+</head>
+<body>
+    
+    <!-- top s -->
+
+    <div id="top">
+        <p>* 크라우드 펀딩 절찬 진행중 *</p>
+    </div>
+
+<!-- top e -->
+
+<!-- 우측 상하 이동 버튼 -->
+<div class="move_bt">
+    <div>
+        <a href="#top" class="bt_top">
+            <img src="./img/main/bt_top_arrow.png" alt="top_bt">
+        </a>
+    </div>
+    <div>
+        <a href="#footer_wrap" class="bt_bottom">
+        <img src="./img/main/bt_bottom_arrow.png" alt="bottom_bt">
+        </a>
+    </div>
+</div>
+
+    <script>
+        $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+            $('html, body').animate({
+            scrollTop: target.offset().top
+            }, 500);//움직이는 시간 조정
+            return false;
+            }
+            }
+            });
+            });
+    </script>
+
+<!-- main_banner s -->
+
+<!-- header_wrap s -->
+
+<div class="main_wrap">
+
+    <div class="main_top">
+            <img src="./img/main/main_top_img.png" alt="main_top">
+        </div>
+
+    <div id="star_bg">
+        
+        <div id="stars">
+        </div>
+        <div id="stars2">
+        </div>
+        <div id="stars3">
+        </div>
+
+    </div>
+
+
+
+    <div id="header_wrap">
+        <div class="header">
+            <div class="header_top">
+                <a href="#" onclick="return false;" class="hamburger-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
+                <h1 class="logo">
+                    <a href="./index.html" class="h_logo">
+                        <img src="./img/main/h_logo.png" alt="h_logo">
+                    </a>
+                    <a href="./index.html" class="h_white">
+                        <img src="./img/main/h_logo_white.png" alt="h_logo_white">
+                    </a>
+                </h1>
+            <ul class="h_icon">
+                <li>
+                    <a href="#">
+                        <img src="./img/main/buy.png" alt="buy">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/heart.png" alt="heart">
+                    </a>
+                </li>
+                <li>
+                    <a href="./login.html">
+                        <img src="./img/main/login.png" alt="login">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/search.png" alt="search">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- header_top -->
+
+        <!-- gnb s -->
+        <div id="gnb_wrapper">
+            <div class="gnb">
+                <ul class="gnb_menu">
+                    <li class="gnb_title">
+                        <div class="sub_title_wrapper">
+                            <div class="sub_title1">
+                                <a href="#">
+                                    <img src="./img/main/sub_title_shop.png" alt="sub_shop">
+                                </a>
+                            </div>
+                            <div class="sub_title_hover1">
+                                <a href="#">
+                                    <img src="./img/main/sub_title_shop_h.png" alt="sub_shop_h">
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="gnb_text gnb1">
+                            <li>
+                                <a href="#promotion">PROMOTION</a>
+                            </li>
+                            <li>
+                                <a href="#new_wrap">NEW</a>
+                            </li>
+                            <li>
+                                <a href="./sub1_products.html">PRODUCTS</a>
+                            </li>
+                            <li>
+                                <a href="#invest_wrap">INVEST</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb_title">
+                        <div class="sub_title2">
+                            <a href="#">
+                                <img src="./img/main/sub_title_aboutus.png" alt="sub_shop">
+                            </a>
+                        </div>
+                        <div class="sub_title_hover2">
+                            <a href="#">
+                                <img src="./img/main/sub_title_aboutus_h.png" alt="sub_shop_h">
+                            </a>
+                        </div>
+                        <ul class="gnb_text gnb2">
+                            <li>
+                                <a href="./sub2.html">OUR BRAND</a>
+                            </li>
+                            <li>
+                                <a href="./sub2.html">OUR BAG</a>
+                            </li>
+                            <li>
+                                <a href="./sub2.html">CAMPAIGN</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb_title">
+                        <div class="sub_title3">
+                            <a href="#">
+                                <img src="./img/main/sub_title_community.png" alt="sub_shop">
+                            </a>
+                        </div>
+                        <div class="sub_title_hover3">
+                            <a href="#">
+                                <img src="./img/main/sub_title_community_h.png" alt="sub_shop_h">
+                            </a>
+                        </div>
+                        <ul class="gnb_text gnb3">
+                            <li>
+                                <a href="./sub3.html">EVENT</a>
+                            </li>
+                            <li>
+                                <a href="./sub3.html">NOTICE</a>
+                            </li>
+                            <li>
+                                <a href="./sub3.html">REVIEW</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- gnb_wrapper e -->
+
+    </div>
+    <!-- header e -->
+        
+ </div>
+<!-- header_wrap e -->  
+
+<div class="mb_title_wrap">
+    <p class="mb_title">
+        <img src="sub1_shop/mb_title.png" alt="mb_title">
+    </p>
+
+    <p class="mb_text1">여러가지 프레바이브 제품이 들어가있는 <span>랜덤팩</span>을 구매하여 지구를 지켜주세요. </p>
+    <p class="mb_text2">* 판매 수익금의 일부가 지구를 위한 환경단체에 기부됩니다. * </p>
+
+</div>
+    <div class="mb_bag">
+        <ul>
+            <li class="mb_bag1">
+                <a href="#">
+                    <img src="sub1_shop/mb_bag1.png" alt="mb_bag1">
+                    <div class="mh1">
+                        <img src="sub1_shop/mb_bag1_hover.png" alt="mb_bag1_hover">
+                    </div>
+                </a>
+            </li>
+            <li class="mb_bag2">
+                <a href="#">
+                    <img src="sub1_shop/mb_bag2.png" alt="mb_bag1">
+                    <div class="mh2">
+                        <img src="sub1_shop/mb_bag2_hover.png" alt="mb_bag2_hover">
+                    </div>
+                </a>
+            </li>
+            <li class="mb_bag3">
+                <a href="#">
+                    <img src="sub1_shop/mb_bag3.png" alt="mb_bag1">
+                    <div class="mh3">
+                        <img src="sub1_shop/mb_bag3_hover.png" alt="mb_bag3_hover">
+                    </div>
+                </a>
+            </li>
+            <li class="mb_bag4">
+                <a href="#">
+                    <img src="sub1_shop/mb_bag4.png" alt="mb_bag4">
+                    <div class="mh4">
+                        <img src="sub1_shop/mb_bag4_hover.png" alt="mb_bag4_hover">
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+<!-- main_banner e -->
+
+<!-- promotion s -->
+
+    <div id="promotion">
+        <ul>
+        <li class="pr_left">
+            <div>
+            <img src="sub1_shop/pr_left.png" alt="pr_left">
+            </div>
+            <div class="pr_left_wrap">
+                <p class="pr_left_text1">프레바이브 인기상품들로 구성된 스페셜팩!!!<br>
+                    무엇이 들어있을지 모르는<br>
+                    <span>을 만나보세요.</span>
+                </p>
+                <p class="pr_left_text2">* 랜덤으로 구성된 제품으로 제품 이상 이외<br>
+                    단순변심으로 인한 단일 제품 교환이 불가합니다.*</p>
+            </div>
+            <div class="pr_size">
+                <ul>
+                    <li class="s_size">
+                        <a href="#">
+                            <p class="size_text">
+                            S<br>
+                            <span>(Small Size)</span>
+                            </p>
+                            <p class="s_hover_text">미니 사이즈 굿즈 랜덤팩</p>
+                        </a>
+                    </li>
+                    <li class="m_size">
+                        <a href="#">
+                            <p class="size_text">
+                            M<br>
+                            <span>(Medium Size)</span>
+                            </p>
+                            <p class="s_hover_text">미니 & 미들 굿즈 랜덤팩</p>
+                        </a>
+                    </li>
+                    <li class="l_size">
+                        <a href="#">
+                            <p class="size_text">
+                            L<br>
+                            <span>(Large Size)</span>
+                            </p>
+                            <p class="l_hover_text">전제품 랜덤 굿즈 랜덤팩</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="pr_right">
+            <div>
+            <img src="sub1_shop/pr_right.png" alt="pr_right">
+            </div>
+            <div class="pr_right_text">
+                <div class="text_line"></div>
+                <p class="pr_right_text1">지구랜덤팩 구매시, 할인쿠폰 증정</p>
+                <p class="pr_right_text2">많이 사면 많이 살수록 할인이 커진다.</p>
+                <p class="pr_right_text3">* 1인당 1일 최대 10개 구매 가능합니다. * <br>
+                    단체 구매를 원하실 경우 고객센터 통해 문의 부탁드립니다. </p>
+            </div>
+            <div class="pr_right_bar_bt">
+                <p class="pr_right_bar_inner"></p>
+            </div>
+
+            <!-- 쿠폰 swiper -->
+
+            <!-- Swiper -->
+            <div class="coupon_wrap">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide coupon">
+                            <img src="sub1_shop/coupon1.png" alt="coupon1">
+                        </div>
+                        <div class="swiper-slide coupon">
+                            <img src="sub1_shop/coupon2.png" alt="coupon2">
+                        </div>
+                        <div class="swiper-slide coupon">
+                            <img src="sub1_shop/coupon3.png" alt="coupon3">
+                        </div>
+                        <div class="swiper-slide coupon">
+                            <img src="sub1_shop/coupon4.png" alt="coupon4">
+                        </div>
+                        <div class="swiper-slide coupon">
+                            <img src="sub1_shop/coupon5.png" alt="coupon5">
+                        </div>
+                        <div class="swiper-slide coupon">
+                            <img src="sub1_shop/coupon6.png" alt="coupon6">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+            </div>
+            <!-- swiper e -->
+             <!-- coupon 스와이퍼 -->
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    freeMode: true,
+                    pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    },
+                });
+                </script>
+            </div>
+
+
+        </li>
+        </ul>
+
+        <!-- 디자인 요소 -->
+
+        <div class="pr_star1">
+            <img src="sub1_shop/pr_star1.png" alt="pr_star1">
+        </div>
+
+        <div class="pr_star2">
+            <img src="sub1_shop/pr_star2.png" alt="pr_star2">
+        </div>
+
+        <div class="sub_star">
+            <img src="./img/main/bg_design2.png" alt="bg_design2">
+        </div>
+
+        <div class="coupon_arrow">
+            <img src="sub1_shop/coupon_bt_arrow.png" alt="coupon_arrow">
+        </div>
+        
+    </div>
+
+    <!-- promotion e -->
+
+    <!-- slide_text s -->
+
+        <div class="slide_wrap">
+            <div class="slide_text">
+                <p><img src="./img/main/slide_text.png" alt="">
+                </p>
+                <p><img src="./img/main/slide_text.png" alt=""></p>
+                <p><img src="./img/main/slide_text.png" alt=""></p>
+            </div>
+        </div>
+    <!-- slide_text e -->
+
+    <!-- new s -->
+
+        <!-- new_modal -->
+        <div class="new_modal_wrap">
+            <div class="new_modal">
+            </div>
+            <div class="login_box">
+                <p>
+                    로그인이 필요합니다.
+                </p>
+                <p class="login_underline">
+                    로그인 하시겠습니까?
+                </p>
+                <ul class="login_answer">
+                    <li><a href="#" onclick="return false;" class="cancel">취소</a></li>
+                    <li class="login_line"></li>
+                    <li><a href="./login.html">확인</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="new_wrap">
+            <div class="new_title">
+                <img src="sub1_shop/new_title.png" alt="new_title">
+            </div>
+            <div class="new_window">
+                <img src="sub1_shop/new_window.png" alt="new_window">
+
+                <div class="new_pr_wrap">
+                    <ul class="new_pr_bag1">
+                        <li class="n_pr">
+
+                            <div class="new_pr1">
+                                <a href="#">
+                                    <img src="sub1_shop/new_pr1.png" alt="new_pr1">
+                                </a>
+                            </div>
+
+                            <div class="pr_hover_wrap">
+                                <div class="new_pr1_hover">
+                                    <img src="sub1_shop/new_pr1_hover.png" alt="new_pr1_hover">
+                                </div>
+                                <div class="new_pr1_text">
+                                    <h4>네온사이클 옐로우</h4>
+                                    <p>83,000원</p>
+                                </div>
+                                <div class="new_pr_icon">
+                                    <ul>
+                                        <li class="heart_modal">
+                                            <a href="javascript:return false;">
+                                                <img src="sub1_shop/new_pr_heart_icon.png" alt="new_pr_icon">
+                                            </a>
+                                            <div class="heart_hover">
+                                                <a href="javascript:return false;" class="heart_modal">
+                                                    <img src="sub1_products/heart_hover.png" alt="heart_hover">
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="buy_modal">
+                                            <a href="javascript:return false;">
+                                                <img src="sub1_shop/new_pr_buy_icon.png" alt="new_pr_icon">
+                                            </a>
+                                            <div class="buy_hover">
+                                                <a href="javascript:return false;" class="buy_modal">
+                                                    <img src="sub1_products/buy_hover.png" alt="buy_hover">
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="n_pr">
+                            <div class="new_pr2">
+                                <a href="#">
+                                    <img src="sub1_shop/new_pr2.png" alt="new_pr2">
+                                </a>
+                            </div>
+                            <div class="pr_hover_wrap">
+                                <div class="new_pr2_hover">
+                                    <img src="sub1_shop/new_pr2_hover.png" alt="new_pr2_hover">
+                                </div>
+                                <div class="new_pr2_text">
+                                    <h4>네온사이클 피치</h4>
+                                    <p>83,000원</p>
+                                </div>
+                            </div>
+                            <div class="new_pr_icon">
+                                <ul>
+                                    <li class="heart_modal">
+                                        <a href="javascript:return false;">
+                                            <img src="sub1_shop/new_pr_heart_icon.png" alt="new_pr_icon">
+                                        </a>
+                                        <div class="heart_hover">
+                                            <a href="javascript:return false;" class="heart_modal">
+                                                <img src="sub1_products/heart_hover.png" alt="heart_hover">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="buy_modal">
+                                        <a href="javascript:return false;">
+                                            <img src="sub1_shop/new_pr_buy_icon.png" alt="new_pr_icon">
+                                        </a>
+                                        <div class="buy_hover">
+                                            <a href="javascript:return false;" class="buy_modal">
+                                                <img src="sub1_products/buy_hover.png" alt="buy_hover">
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="n_pr">
+                            <div class="new_pr3">
+                                <a href="#">
+                                    <img src="sub1_shop/new_pr3.png" alt="new_pr3">
+                                </a>
+                            </div>
+                            <div class="pr_hover_wrap">
+                                <div class="new_pr3_hover">
+                                    <img src="sub1_shop/new_pr3_hover.png" alt="new_pr3_hover">
+                                </div>
+                                <div class="new_pr3_text">
+                                    <h4>네온사이클 핑크</h4>
+                                    <p>83,000원</p>
+                                </div>
+                            </div>
+                            <div class="new_pr_icon">
+                                <ul>
+                                    <li class="heart_modal">
+                                        <a href="javascript:return false;">
+                                            <img src="sub1_shop/new_pr_heart_icon.png" alt="new_pr_icon">
+                                        </a>
+                                        <div class="heart_hover">
+                                            <a href="javascript:return false;" class="heart_modal">
+                                                <img src="sub1_products/heart_hover.png" alt="heart_hover">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="buy_modal">
+                                        <a href="javascript:return false;">
+                                            <img src="sub1_shop/new_pr_buy_icon.png" alt="new_pr_icon">
+                                        </a>
+                                        <div class="buy_hover">
+                                            <a href="javascript:return false;" class="buy_modal">
+                                                <img src="sub1_products/buy_hover.png" alt="buy_hover">
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="new_pr_bag2">
+                        <li class="n_pr">
+                            <div class="new_pr4">
+                                <a href="#">
+                                    <img src="sub1_shop/new_pr4.png" alt="new_pr4">
+                                </a>
+                            </div>
+                            <div class="pr_hover_wrap">
+                                <div class="new_pr4_hover">
+                                    <img src="sub1_shop/new_pr4_hover.png" alt="new_pr4_hover">
+                                </div>
+                                <div class="new_pr4_text">
+                                    <h4>퓨처플렉스 실버</h4>
+                                    <p>120,000원</p>
+                                </div>
+                            </div>
+                            <div class="new_pr_icon">
+                                <ul>
+                                    <li class="heart_modal">
+                                        <a href="javascript:return false;">
+                                            <img src="sub1_shop/new_pr_heart_icon.png" alt="new_pr_icon">
+                                        </a>
+                                        <div class="heart_hover">
+                                            <a href="javascript:return false;" class="heart_modal">
+                                                <img src="sub1_products/heart_hover.png" alt="heart_hover">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="buy_modal">
+                                        <a href="javascript:return false;">
+                                            <img src="sub1_shop/new_pr_buy_icon.png" alt="new_pr_icon">
+                                        </a>
+                                        <div class="buy_hover">
+                                            <a href="javascript:return false;" class="buy_modal">
+                                                <img src="sub1_products/buy_hover.png" alt="buy_hover">
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="n_pr">
+                            <div class="new_pr5">
+                                <a href="#">
+                                    <img src="sub1_shop/new_pr5.png" alt="new_pr5">
+                                </a>
+                            </div>
+                            <div class="pr_hover_wrap">
+                                <div class="new_pr5_hover">
+                                    <img src="sub1_shop/new_pr5_hover.png" alt="new_pr5_hover">
+                                </div>
+                                <div class="new_pr5_text">
+                                    <h4>퓨처플렉스 블루</h4>
+                                    <p>120,000원</p>
+                                </div>
+                            </div>
+                            <div class="new_pr_icon">
+                                <ul>
+                                    <li class="heart_modal">
+                                        <a href="javascript:return false;">
+                                            <img src="sub1_shop/new_pr_heart_icon.png" alt="new_pr_icon">
+                                        </a>
+                                        <div class="heart_hover">
+                                            <a href="javascript:return false;" class="heart_modal">
+                                                <img src="sub1_products/heart_hover.png" alt="heart_hover">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="buy_modal">
+                                        <a href="javascript:return false;">
+                                            <img src="sub1_shop/new_pr_buy_icon.png" alt="new_pr_icon">
+                                        </a>
+                                        <div class="buy_hover">
+                                            <a href="javascript:return false;" class="buy_modal">
+                                                <img src="sub1_products/buy_hover.png" alt="buy_hover">
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="n_pr">
+                            <div class="new_pr6">
+                                <a href="#">
+                                    <img src="sub1_shop/new_pr6.png" alt="new_pr6">
+                                </a>
+                            </div>
+                            <div class="pr_hover_wrap">
+                                <div class="new_pr6_hover">
+                                    <img src="sub1_shop/new_pr6_hover.png" alt="new_pr6_hover">
+                                </div>
+                                <div class="new_pr6_text">
+                                    <h4>퓨처플렉스 골드</h4>
+                                    <p>120,000원</p>
+                                </div>
+                            </div>
+                            <div class="new_pr_icon">
+                                <ul>
+                                    <li class="heart_modal">
+                                        <a href="javascript:return false;">
+                                            <img src="sub1_shop/new_pr_heart_icon.png" alt="new_pr_icon">
+                                        </a>
+                                        <div class="heart_hover">
+                                            <a href="javascript:return false;" class="heart_modal">
+                                                <img src="sub1_products/heart_hover.png" alt="heart_hover">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="buy_modal">
+                                        <a href="javascript:return false;">
+                                            <img src="sub1_shop/new_pr_buy_icon.png" alt="new_pr_icon">
+                                        </a>
+                                        <div class="buy_hover">
+                                            <a href="javascript:return false;" class="buy_modal">
+                                                <img src="sub1_products/buy_hover.png" alt="buy_hover">
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 디자인 요소 -->
+
+            <div class="new_left_symbol">
+                <img src="sub1_shop/new_left_symbol.png" alt="new_left_symbol">
+            </div>
+            
+            <div class="new_right_star">
+                <img src="sub1_shop/new_right_star.png" alt="new_right_star">
+            </div>
+
+            <div class="new_left_check">
+                <img src="sub1_shop/new_left_check.png" alt="new_left_check">
+            </div>
+
+            <div class="new_right_check">
+                <img src="sub1_shop/new_right_check.png" alt="new_right_check">
+            </div>
+
+        </div>
+
+    <!-- new e -->
+
+    <!-- pouch s -->
+
+        <div id="pouch_wrap">
+            <div class="pouch_bg">
+                <img src="sub1_shop/pouch_bg.png" alt="pouch_bg">
+            </div>
+
+            <!-- Swiper -->
+
+        <div class="swiper2_wrap">
+            <div class="swiper2 mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide pouch">
+                        <img src="sub1_shop/pouch1.png" alt="pouch1">
+                    </div>
+                    <div class="swiper-slide pouch">
+                        <img src="sub1_shop/pouch2.png" alt="pouch2">
+                    </div>
+                    <div class="swiper-slide pouch">
+                        <img src="sub1_shop/pouch3.png" alt="pouch3">
+                    </div>
+                    <div class="swiper-slide pouch">
+                        <img src="sub1_shop/pouch4.png" alt="pouch4">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper2 = new Swiper(".mySwiper2", {
+            effect: "cards",
+            grabCursor: true,
+            });
+        </script>
+
+        <!-- 디자인 요소 -->
+            <div class="pouch_circle">
+                <img src="sub1_shop/pouch_bg_design.png" alt="pouch_bg_design">
+            </div>
+
+            <div class="pouch_text_left">
+                <img src="sub1_shop/pouch_text1.png" alt="pouch_text_left">
+            </div>
+
+            <div class="pouch_text_right">
+                <img src="sub1_shop/pouch_text2.png" alt="pouch_text_right">
+            </div>
+        </div>
+
+
+    <!-- pouch e -->
+
+    <!-- invest s -->
+
+        <div id="invest_wrap">
+            <div class="invest_bg">
+                <img src="sub1_shop/invest_bg.png" alt="invest_bg">
+            </div>
+            <div class="search">
+                <div class="si_icon">
+                    <a href="#">
+                        <img src="./img/main/map_search_icon.png" alt="si_icon">
+                    </a>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="검색어를 입력하세요.">
+                </form>
+            </div>
+            <div class="invest_img">
+                <ul>
+                    <li class="invest1">
+                        <a href="javascript:return false;">
+                            <img src="sub1_shop/invest1.png" alt="invest1">
+                        </a>
+                    </li>
+                    <li class="invest2">
+                        <a href="javascript:return false;">
+                            <img src="sub1_shop/invest2.png" alt="invest2">
+                            <div>
+                                <img src="sub1_shop/invest_end.png" alt="invest_end" class="invest_end1">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="invest3">
+                        <a href="javascript:return false;">
+                            <img src="sub1_shop/invest3.png" alt="invest3">
+                        </a>
+                        <div>
+                            <img src="sub1_shop/invest_end.png" alt="invest_end" class="invest_end2">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    <!-- invest e -->
+
+    <!-- footer s -->
+
+    <div id="footer_wrap">
+        <div class="footer">
+
+            <div class="footer_bg_top">
+                <img src="./img/main/footer_bg_top.png" alt="footer_bg_top">
+            </div>
+
+            <div id="star_wrap">
+                    <div id="star_bg2">
+                
+                        <div id="stars">
+                        </div>
+                        <div id="stars2">
+                        </div>
+                        <div id="stars3">
+                        </div>
+                
+                    </div>
+                </div>
+
+
+
+            <div class="footer_bg">
+                <img src="./img/main/footer_bg.png" alt="footer_bg">
+            </div>
+            <div class="footer_text">
+                <ul>
+                    <li class="ft_logo">
+                        <a href="javascript:return false;">
+                            <img src="./img/main/ft_logo.png" alt="ft_logo">
+                        </a>
+                    </li>
+                    <li>
+                        <div>
+                            <ul class="ft_text">
+                                <li>
+                                    <h4>고객 문의</h4>
+                                    <p class="number">1588-1234</p>
+                                    <p class="email">info@frevibe.com</p>
+                                </li>
+                                <li>
+                                    <h4>협업 문의</h4>
+                                    <p class="number">070-1234-5678</p>
+                                    <p class="email">frevibe@frevibe.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ft_rights">
+                            <img src="./img/main/ft_text_logo.png" alt="ft_text_logo">
+                            │ ©2024. Frevibe all rights reserved.
+                        </div>
+                        <p class="ft_link">
+                            <a href="javascript:return false;">이용 약관</a> │ <a href="javascript:return false;">개인정보처리방침</a> │ <a href="javascript:return false;">이용안내</a>
+                        </p>
+                        <ul class="ft_sns">
+                            <li>
+                                <div class="sns">
+                                    <a href="https://www.instagram.com/">
+                                        <img src="./img/main/ft_sns_insta.png" alt="ft_sns_insta">
+                                    </a>
+                                    <div class="sns_hover">
+                                        <a href="https://www.instagram.com/">
+                                            <img src="./img/main/ft_sns_insta_h.png" alt="ft_sns_insta">
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </li>
+                            <li>
+                                <div class="sns">
+                                <a href="https://www.youtube.com/">
+                                    <img src="./img/main/ft_sns_youtube.png" alt="ft_sns_insta">
+                                </a>
+                                <div class="sns_hover">
+                                    <a href="https://www.youtube.com/">
+                                        <img src="./img/main/ft_sns_youtube_h.png" alt="ft_sns_insta">
+                                    </a>
+                                </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sns">
+                                <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
+                                    <img src="./img/main/ft_sns_naver.png" alt="ft_sns_insta">
+                                </a>
+                                <div class="sns_hover">
+                                    <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
+                                        <img src="./img/main/ft_sns_naver_h.png" alt="ft_sns_insta">
+                                    </a>
+                                </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<!-- footer e -->
+
+
+
+
+
+</body>
+</html>

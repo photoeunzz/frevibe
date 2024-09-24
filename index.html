@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1320, initial-scale=1.0">
+    <title>Frevibe</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- js 연결 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="./js/script.js"></script>
+
+    <!-- 웹폰트 적용 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- excelorate 폰트 -->
+    <link rel="stylesheet" href="./font/excelorate/stylesheet.css">
+
+    <!-- favicon 적용 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/frevibe_favicon.png">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- wowjs CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- timecount -->
+    <meta name="description" content="Counter Up - jQuery Plugin Demo">
+    <meta name="author" content="Benjamin Intal">
+    <link rel="author" href="https://plus.google.com/113101541449927918834"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+      <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter1, .counter2, .counter3').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+  </script>
+</head>
+<body>
+    
+    <!-- top s -->
+
+        <div id="top">
+            <p>* 크라우드 펀딩 절찬 진행중 *</p>
+        </div>
+
+    <!-- top e -->
+
+    <!-- 우측 상하 이동 버튼 -->
+        <div class="move_bt">
+            <div>
+                <a href="#top" class="bt_top">
+                    <img src="./img/main/bt_top_arrow.png" alt="top_bt">
+                </a>
+            </div>
+            <div>
+                <a href="#footer_wrap" class="bt_bottom">
+                <img src="./img/main/bt_bottom_arrow.png" alt="bottom_bt">
+                </a>
+            </div>
+        </div>
+
+        <script>
+			$(function() {
+				$('a[href*="#"]:not([href="#"])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+				$('html, body').animate({
+				scrollTop: target.offset().top
+				}, 500);//움직이는 시간 조정
+				return false;
+				}
+				}
+				});
+				});
+		</script>
+
+    <!-- main_banner s -->
+
+    <!-- header_wrap s -->
+
+        <!-- 영상 소스 -->
+        <div class="main_text">
+            <img src="./img/video/main_banner.gif" alt="main_banner">
+        </div>
+
+        <!-- 디자인 요소_스티커 -->
+        <div class="main_sticker">
+            <a href="#">
+            <img src="./img/main/main_sticker.png" alt="main_sticker">
+            </a>
+        </div>
+
+
+    <div class="main_wrap">
+
+        <div class="main_top">
+            <img src="./img/main/main_top_img.png" alt="main_top">
+        </div>
+
+
+        <div id="star_wrap">
+            <div id="star_bg">
+        
+                <div id="stars">
+                </div>
+                <div id="stars2">
+                </div>
+                <div id="stars3">
+                </div>
+
+                <section>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>    
+                    <span></span>    
+                    <span></span>    
+                    <span></span>
+                </section>
+        
+            </div>
+        </div>
+
+        <div id="header_wrap">
+            <div class="header">
+                <div class="header_top">
+                    <a href="javascript:return false;" class="hamburger-button">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </a>
+                    <h1 class="logo">
+                        <a href="./index.html" class="h_logo">
+                            <img src="./img/main/h_logo.png" alt="h_logo">
+                        </a>
+                        <a href="./index.html" class="h_white">
+                            <img src="./img/main/h_logo_white.png" alt="h_logo_white">
+                        </a>
+                    </h1>
+                <ul class="h_icon">
+                    <li>
+                        <a href="javascript:return false;">
+                            <img src="./img/main/buy.png" alt="buy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:return false;">
+                            <img src="./img/main/heart.png" alt="heart">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./login.html">
+                            <img src="./img/main/login.png" alt="login">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:return false;">
+                            <img src="./img/main/search.png" alt="search">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- header_top -->
+
+            <!-- gnb s -->
+        <div id="gnb_wrapper">
+            <div class="gnb">
+                <ul class="gnb_menu">
+                    <li class="gnb_title">
+                        <div class="sub_title_wrapper">
+                            <div class="sub_title1">
+                                <a href="#">
+                                    <img src="./img/main/sub_title_shop.png" alt="sub_shop">
+                                </a>
+                            </div>
+                            <div class="sub_title_hover1">
+                                <a href="#">
+                                    <img src="./img/main/sub_title_shop_h.png" alt="sub_shop_h">
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="gnb_text gnb1">
+                            <li>
+                                <a href="./sub1_shop.html">PROMOTION</a>
+                            </li>
+                            <li>
+                                <a href="./sub1_shop.html">NEW</a>
+                            </li>
+                            <li>
+                                <a href="./sub1_products.html">PRODUCTS</a>
+                            </li>
+                            <li>
+                                <a href="./sub1_shop.html">INVEST</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb_title">
+                        <div class="sub_title2">
+                            <a href="#">
+                                <img src="./img/main/sub_title_aboutus.png" alt="sub_shop">
+                            </a>
+                        </div>
+                        <div class="sub_title_hover2">
+                            <a href="#">
+                                <img src="./img/main/sub_title_aboutus_h.png" alt="sub_shop_h">
+                            </a>
+                        </div>
+                        <ul class="gnb_text gnb2">
+                            <li>
+                                <a href="./sub2.html">OUR BRAND</a>
+                            </li>
+                            <li>
+                                <a href="./sub2.html">OUR BAG</a>
+                            </li>
+                            <li>
+                                <a href="./sub2.html">CAMPAIGN</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb_title">
+                        <div class="sub_title3">
+                            <a href="#">
+                                <img src="./img/main/sub_title_community.png" alt="sub_shop">
+                            </a>
+                        </div>
+                        <div class="sub_title_hover3">
+                            <a href="#">
+                                <img src="./img/main/sub_title_community_h.png" alt="sub_shop_h">
+                            </a>
+                        </div>
+                        <ul class="gnb_text gnb3">
+                            <li>
+                                <a href="./sub3.html">EVENT</a>
+                            </li>
+                            <li>
+                                <a href="./sub3.html">NOTICE</a>
+                            </li>
+                            <li>
+                                <a href="./sub3.html">REVIEW</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- gnb_wrapper e -->
+            </div>
+            <!-- header e -->
+            
+        </div>
+    <!-- header_wrap e -->
+        
+                
+
+
+        </div>
+    <!-- main_banner e -->
+
+    <!-- slide_text s -->
+        <div class="slide_text">
+            <p><img src="./img/main/slide_text.png" alt="">
+            </p>
+            <p><img src="./img/main/slide_text.png" alt=""></p>
+            <p><img src="./img/main/slide_text.png" alt=""></p>
+        </div>
+    <!-- slide_text e -->
+
+     <!-- new s -->
+
+        <!-- new_modal -->
+        <div class="new_modal_wrap">
+            <div class="new_modal">
+            </div>
+            <div class="login_box">
+                <p>
+                    로그인이 필요합니다.
+                </p>
+                <p class="login_underline">
+                    로그인 하시겠습니까?
+                </p>
+                <ul class="login_answer">
+                    <li><a href="#" onclick="return false;" class="cancel">취소</a></li>
+                    <li class="login_line"></li>
+                    <li><a href="./login.html">확인</a></li>
+                </ul>
+            </div>
+        </div>
+
+     <div id="new_wrap">
+        <div class="new">
+            <div class="new_title">
+                <p>
+                <img src="./img/main/new_title.png" alt="new_title">
+                </p>
+            </div>
+            <div class="swiper1 mySwiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide new_slide">
+                       <div class="sw_inner">
+                        <div class="sw_img">
+                            <img src="./img/main/new1.jpg" alt="img">
+                        </div>
+                            <div class="sw_icon">
+                                <div>
+                                    <a href="#" onclick="return false;" class="heart_modal">
+                                        <img src="./img/main/new_heart.png" alt="new_heart">
+                                    </a>
+                                </div>
+                                <a href="#" onclick="return false;" class="buy_modal">
+                                    <img src="./img/main/new_buy.png" alt="new_buy">
+                                </a>
+                            </div>
+                            <div class="hover_bg">
+                            </div>
+                    </div>
+                    <div class="hover_text">
+                        <p class="new_name">네온사이클 옐로우</p>
+                        <p class="new_price">￦83,000</p>
+                    </div>
+                    </div>
+                    <!-- 1번 제품 -->
+                    <div class="swiper-slide new_slide">
+                       <div class="sw_inner">
+                        <div class="sw_img">
+                            <img src="./img/main/new2.jpg" alt="img">
+                        </div>
+                            <div class="sw_icon">
+                                <a href="#" onclick="return false;" class="heart_modal">
+                                    <img src="./img/main/new_heart.png" alt="new_heart">
+                                </a>
+                                <a href="#" onclick="return false;" class="buy_modal">
+                                    <img src="./img/main/new_buy.png" alt="new_buy">
+                                </a>
+                            </div>
+                            <div class="hover_bg">
+                            </div>    
+                    </div>
+                    <div class="hover_text">
+                        <p class="new_name">프레브에어백드럼 블루 </p>
+                        <p class="new_price">￦92,000</p>
+                    </div>
+                    </div>
+                    <!-- 2번 제품 -->
+                    <div class="swiper-slide new_slide">
+                       <div class="sw_inner">
+                        <div class="sw_img">
+                            <img src="./img/main/new3.jpg" alt="img">
+                        </div>
+                            <div class="sw_icon">
+                                <a href="#" onclick="return false;" class="heart_modal">
+                                    <img src="./img/main/new_heart.png" alt="new_heart">
+                                </a>
+                                <a href="#" onclick="return false;" class="buy_modal">
+                                    <img src="./img/main/new_buy.png" alt="new_buy">
+                                </a>
+                            </div>
+                            <div class="hover_bg">
+                            </div>    
+                    </div>
+                    <div class="hover_text">
+                        <p class="new_name">퓨처플렉스 골드</p>
+                        <p class="new_price">￦120,000</p>
+                    </div>
+                    </div>
+                    <!-- 3번 제품 -->
+                    <div class="swiper-slide new_slide">
+                       <div class="sw_inner">
+                        <div class="sw_img">
+                            <img src="./img/main/new4.jpg" alt="img">
+                        </div>
+                            <div class="sw_icon">
+                                <a href="#" onclick="return false;" class="heart_modal">
+                                    <img src="./img/main/new_heart.png" alt="new_heart">
+                                </a>
+                                <a href="#" onclick="return false;" class="buy_modal">
+                                    <img src="./img/main/new_buy.png" alt="new_buy">
+                                </a>
+                            </div>
+                            <div class="hover_bg">
+                            </div>    
+                    </div>
+                    <div class="hover_text">
+                        <p class="new_name">네온사이클 피치</p>
+                        <p class="new_price">￦83,000</p>
+                    </div>
+                    </div>
+                    <!-- 4번 제품 -->
+                    <div class="swiper-slide new_slide">
+                       <div class="sw_inner">
+                        <div class="sw_img">
+                            <img src="./img/main/new5.jpg" alt="img">
+                        </div>
+                            <div class="sw_icon">
+                                <a href="#" onclick="return false;" class="heart_modal">
+                                    <img src="./img/main/new_heart.png" alt="new_heart">
+                                </a>
+                                <a href="#" onclick="return false;" class="buy_modal">
+                                    <img src="./img/main/new_buy.png" alt="new_buy">
+                                </a>
+                            </div>
+                            <div class="hover_bg">
+                            </div>    
+                    </div>
+                    <div class="hover_text">
+                        <p class="new_name">프레브에어백드럼 퍼플</p>
+                        <p class="new_price">￦92,000</p>
+                    </div>
+                    </div>
+                    <!-- 5번 제품 -->
+                    <div class="swiper-slide new_slide">
+                       <div class="sw_inner">
+                        <div class="sw_img">
+                            <img src="./img/main/new6.jpg" alt="img">
+                        </div>
+                            <div class="sw_icon">
+                                <a href="#" onclick="return false;" class="heart_modal">
+                                    <img src="./img/main/new_heart.png" alt="new_heart">
+                                </a>
+                                <a href="#" onclick="return false;" class="buy_modal">
+                                    <img src="./img/main/new_buy.png" alt="new_buy">
+                                </a>
+                            </div>
+                            <div class="hover_bg">
+                            </div>    
+                    </div>
+                    <div class="hover_text">
+                        <p class="new_name">퓨처플렉스 블루</p>
+                        <p class="new_price">￦120,000</p>
+                    </div>
+                    </div>
+                    <!-- 6번 제품 -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 디자인 요소 -->
+
+        <div class="h_drag">
+            <img src="./img/main/h_drag.png" alt="h_drag">
+        </div>
+
+        <!-- <div class="animate__animated animate__slideInRight bg_design1">
+            <img src="./img/main/bg_design1.png" alt="bg_design1">
+        </div> -->
+
+        <div class="slide-in-box">
+            <h2><img src="./img/main/bg_design1.png" alt="bg_design1"></h2>
+        </div>
+
+        <div class="bg_design2">
+            <img src="./img/main/bg_design2.png" alt="bg_design2">
+        </div>
+    </div>
+    <!-- new e -->
+    <!-- new 슬라이드 -->
+
+
+    <!-- sub_banner s -->
+
+        <div id="sub_bn">
+
+            <div class="sub_img">
+                <img src="./img/main/sub_banner.png" alt="sub_banner">
+            </div>
+
+            <div class="sub_button">
+
+                <div class="sub_bt">
+                    <a href="#">
+                        <img src="./img/main/sub_bt.png" alt="sub_bt">
+                    </a>
+                </div>
+
+                <div class="sub_hover">
+                    <a href="#">
+                        <img src="./img/main/sub_hover.png" alt="sub_bt">
+                    </a>
+                </div>
+            </div>    
+            
+            <!-- sub 디자인 요소  -->
+
+        <div class="sub_check">
+            <img src="./img/main/sub_check_right.png" alt="check_right">
+        </div>
+
+        <!-- <div class="sub_window animate__animated animate__fadeInBottomLeft">
+            <img src="./img/main/bg_design3.png" alt="sub_window">
+        </div> -->
+
+        <div class="sub_star">
+            <img src="./img/main/bg_design2.png" alt="bg_design2">
+        </div>
+
+        </div>
+    
+        
+    <!-- sub_banner e -->
+
+    <!-- we are s -->
+
+        <div class="weare_wrap">
+            <div class="weare_title">
+                <img src="./img/main/weare_title.png" alt="weare_title">
+            </div>
+            <ul class="weare_text">
+                <li>
+                    <div class="we_text">
+                        <ul class="t1">
+                            <li><a href="javascript:return false;">
+                                <div class="w_t_wrap">
+                                    <div class="w_text">
+                                        <img src="./main_img_weare_text/weare_text1-1.png" alt="w1">
+                                    </div>
+                                    <div class="w_hover">
+                                        <img src="./main_img_weare_text/weare_text1-2.png" alt="w2">
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a href="javascript:return false;">
+                                <div class="w_t_wrap">
+                                    <div class="w_text">
+                                        <img src="./main_img_weare_text/weare_text2-1.png" alt="w1">
+                                    </div>
+                                    <div class="w_hover">
+                                        <img src="./main_img_weare_text/weare_text2-2.png" alt="w2">
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a href="javascript:return false;">
+                                <div class="w_t_wrap">
+                                    <div class="w_text">
+                                        <img src="./main_img_weare_text/weare_text3-1.png" alt="w1">
+                                    </div>
+                                    <div class="w_hover">
+                                        <img src="./main_img_weare_text/weare_text3-2.png" alt="w2">
+                                    </div>
+                                </div>
+                            </a></li>
+                        </ul>
+                        <ul class="t2">
+                            <li><a href="javascript:return false;">
+                                <div class="w_t_wrap">
+                                    <div class="w_text">
+                                        <img src="./main_img_weare_text/weare_text4-1.png" alt="w1">
+                                    </div>
+                                    <div class="w_hover">
+                                        <img src="./main_img_weare_text/weare_text4-2.png" alt="w2">
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a href="javascript:return false;">
+                                <div class="w_t_wrap">
+                                    <div class="w_text">
+                                        <img src="./main_img_weare_text/weare_text5-1.png" alt="w1">
+                                    </div>
+                                    <div class="w_hover">
+                                        <img src="./main_img_weare_text/weare_text5-2.png" alt="w2">
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a href="javascript:return false;">
+                                <div class="w_t_wrap">
+                                    <div class="w_text">
+                                        <img src="./main_img_weare_text/weare_text6-1.png" alt="w1">
+                                    </div>
+                                    <div class="w_hover">
+                                        <img src="./main_img_weare_text/weare_text6-2.png" alt="w2">
+                                    </div>
+                                </div>
+                            </a></li>
+                        </ul>
+                        <ul class="t3">
+                            <li><a href="javascript:return false;">
+                                <div class="w_t_wrap">
+                                    <div class="w_text">
+                                        <img src="./main_img_weare_text/weare_text7-1.png" alt="w1">
+                                    </div>
+                                    <div class="w_hover">
+                                        <img src="./main_img_weare_text/weare_text7-2.png" alt="w2">
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a href="javascript:return false;">
+                                <div class="w_t_wrap">
+                                    <div class="w_text">
+                                        <img src="./main_img_weare_text/weare_text8-1.png" alt="w1">
+                                    </div>
+                                    <div class="w_hover">
+                                        <img src="./main_img_weare_text/weare_text8-2.png" alt="w2">
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a href="javascript:return false;">
+                                <div class="w_t_wrap">
+                                    <div class="w_text">
+                                        <img src="./main_img_weare_text/weare_text9-1.png" alt="w1">
+                                    </div>
+                                    <div class="w_hover">
+                                        <img src="./main_img_weare_text/weare_text9-2.png" alt="w2">
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a href="javascript:return false;">
+                                <div class="w_t_wrap">
+                                    <div class="w_text">
+                                        <img src="./main_img_weare_text/weare_text10-1.png" alt="w1">
+                                    </div>
+                                    <div class="w_hover">
+                                        <img src="./main_img_weare_text/weare_text10-2.png" alt="w2">
+                                    </div>
+                                </div>
+                            </a></li>
+                        </ul>
+                        <ul class="t4">
+                            <li><a href="javascript:return false;">
+                                <div class="w_t_wrap">
+                                    <div class="w_text">
+                                        <img src="./main_img_weare_text/weare_text11-1.png" alt="w1">
+                                    </div>
+                                    <div class="w_hover">
+                                        <img src="./main_img_weare_text/weare_text11-2.png" alt="w2">
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a href="javascript:return false;">
+                                <div class="w_t_wrap">
+                                    <div class="w_text">
+                                        <img src="./main_img_weare_text/weare_text12-1.png" alt="w1">
+                                    </div>
+                                    <div class="w_hover">
+                                        <img src="./main_img_weare_text/weare_text12-2.png" alt="w2">
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a href="javascript:return false;">
+                                <div class="w_t_wrap">
+                                    <div class="w_text">
+                                        <img src="./main_img_weare_text/weare_text13-1.png" alt="w1">
+                                    </div>
+                                    <div class="w_hover">
+                                        <img src="./main_img_weare_text/weare_text13-2.png" alt="w2">
+                                    </div>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="weare_circle">
+                        <div>
+                            <img src="./img/main/weare_logo.png" alt="weare_logo">
+                        </div>
+                        <div class="logo_rotate">
+                            <img src="./img/main/weare_logo_rotate.png" alt="logo_rotate">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- weare 디자인 요소 -->
+            <div class="weare_check">
+                <img src="./img/main/weare_check.png" alt="weare_check">
+            </div>
+        </div>
+
+    <!-- we are e -->
+
+    <!-- discount s -->
+
+    <div class="discount_wrap">
+        <p>
+            <img src="./img/main/discount_text.png" alt="ds_text">
+        </p>
+        <div class="swiper2 mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide sw_2 text1">
+                <img src="./img/main/ds_img1.png" alt="img1">
+                <div class="hover_text1">
+                  <img src="./img/main/ds_hover_text1.png" alt="text1">
+                </div>
+              </div>
+        
+              <div class="swiper-slide sw_2 text2">
+                <img src="./img/main/ds_img2.png" alt="img2">
+                <div class="hover_text2">
+                    <img src="./img/main/ds_hover_text2.png" alt="text2">
+                </div>
+              </div> 
+              
+              <div class="swiper-slide sw_2 text3">
+                <img src="./img/main/ds_img3.png" alt="img3">
+                <div class="hover_text3">
+                  <img src="./img/main/ds_hover_text3.png" alt="text3">
+                </div>
+              </div>
+        
+              <div class="swiper-slide sw_2 text4">
+                <img src="./img/main/ds_img4.png" alt="img4">
+                <div class="hover_text4">
+                  <img src="./img/main/ds_hover_text4.png" alt="text4">
+                </div>
+              </div>
+        
+              <div class="swiper-slide sw_2 text5">
+                <img src="./img/main/ds_img5.png" alt="img5">
+                <div class="hover_text5">
+                  <img src="./img/main/ds_hover_text5.png" alt="text5">
+                </div>
+              </div>
+        
+              <div class="swiper-slide sw_2 text6">
+                <img src="./img/main/ds_img6.png" alt="img6">
+                <div class="hover_text6">
+                  <img src="./img/main/ds_hover_text6.png" alt="text6">
+                </div>
+              </div>
+        
+              <div class="swiper-slide">
+              </div>
+        
+            </div>
+          </div>
+    </div>
+
+<!-- discount e -->
+
+    <!-- popup s -->
+    
+        <div class="pp_wrap">
+            <div>
+                <img src="./img/main/pp_main.png" alt="pp_main">
+            </div>
+            <div class="map">
+                <div>
+                    <img src="./img/main/pp_map.png" alt="pp_map">
+                </div>
+
+                <div class="map_img">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.237538564367!2d126.92585117632063!3d37.52589747204912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b45c3d89d7801%3A0x7883571cabf15b8b!2z642U7ZiE64yAIOyEnOyauA!5e0!3m2!1sko!2skr!4v1724297845060!5m2!1sko!2skr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="map_bt_wrap">
+                    <div class="map_bt">
+                        <a href="javascript:return false;">
+                            <button onclick="showWarning()">
+                                
+                                <img src="./img/main/address_icon.png" alt="address">
+                                <p class="ad_copy">주소복사</p>
+                                
+                            </button>
+                            <script>
+                                function showWarning() {
+                                    alert("주소가 복사되었습니다.");
+                                }
+                            </script>
+                            </a>
+                        <a href="https://naver.me/5PS2Ritm">
+                            <img src="./img/main/map_naver.png" alt="map_naver">
+                            <p>네이버 길찾기</p>
+                        </a>
+                        <a href="https://kko.to/3AmJL_m6NR">
+                            <img src="./img/main/map_kakao.png" alt="map_kakao">
+                            <p>카카오 길찾기</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="map_search">
+                    <form action="#">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                    </form>
+                    <div class=si_icon>
+                        <a href="#">
+                            <img src="./img/main/map_search_icon.png" alt="si_icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- map e -->
+
+            <!-- pp 디자인 요소 -->
+
+            <div class="pp_star_left1">
+                <img src="./img/main/pp_star_left1.png" alt="pp_star_left1">
+            </div>
+
+            <div class="pp_star_left2">
+                <img src="./img/main/pp_star_left2.png" alt="pp_star_left2">
+            </div>
+
+            <div class="pp_left_linestar">
+                <img src="./img/main/pp_left_linestar.png" alt="pp_left_linestar">
+            </div>
+
+
+            <div class="pp_star_right">
+                <img src="./img/main/pp_star_right.png" alt="pp_star_right">
+            </div>
+
+            <div class="pp_frevibe_text">
+                <img src="./img/main/pp_frevibe_text.png" alt="frevibe_text">
+            </div>
+
+            <div class="pp_loading">
+                <img src="./img/video/loading.gif" alt="pp_loading">
+            </div>
+
+        </div>
+
+    <!-- popup e -->
+
+    <!-- sourcing s -->
+
+        <div class="sourcing_wrap">
+
+            <div class="sourcing_bg">
+                <img src="./img/main/sourcing_bg.png" alt="sourcing">
+            </div>
+            
+            <div class="counter_box">
+                <p class="counter1">62</p>
+                <p class="counter2">7,440,000</p>
+            </div>
+
+            <div class="counter_box">
+                <p class="counter3">15</p>
+            </div>
+
+            <!-- counter script -->
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+            <script src="js/jquery.counterup.min.js"></script>
+            <!-- script e -->
+
+            <div class="sc_bar">
+                <a href="javascript:return false;"><p class="bar_inner"></p></a>
+            </div>
+
+            <div class="sc_bt">
+                <div>
+                    <a href="javascript:return false;">
+                        <img src="./img/main/sourcing_bt.png" alt="sourcing_bt">
+                    </a>
+                </div>
+                <div class="sc_hover">
+                    <a href="javascript:return false;">
+                        <img src="./img/main/sourcing__hover_bt.png" alt="sourcing__hover_bt">
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+    <!-- sourcing e -->
+
+    <!-- footer s -->
+
+        <div id="footer_wrap">
+            <div class="footer">
+
+                <div class="footer_bg_top">
+                    <img src="./img/main/footer_bg_top.png" alt="footer_bg_top">
+                </div>
+
+                <div id="star_wrap2">
+                    <div id="star_bg2">
+                
+                        <div id="stars">
+                        </div>
+                        <div id="stars2">
+                        </div>
+                        <div id="stars3">
+                        </div>
+                
+                    </div>
+                </div>
+
+
+                <div class="footer_bg">
+                    <img src="./img/main/footer_bg.png" alt="footer_bg">
+                </div>
+                <div class="footer_text">
+                    <ul>
+                        <li class="ft_logo">
+                            <a href="javascript:return false;">
+                                <img src="./img/main/ft_logo.png" alt="ft_logo">
+                            </a>
+                        </li>
+                        <li>
+                            <div>
+                                <ul class="ft_text">
+                                    <li>
+                                        <h4>고객 문의</h4>
+                                        <p class="number">1588-1234</p>
+                                        <p class="email">info@frevibe.com</p>
+                                    </li>
+                                    <li>
+                                        <h4>협업 문의</h4>
+                                        <p class="number">070-1234-5678</p>
+                                        <p class="email">frevibe@frevibe.com</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ft_rights">
+                                <img src="./img/main/ft_text_logo.png" alt="ft_text_logo">
+                                │ ©2024. Frevibe all rights reserved.
+                            </div>
+                            <p class="ft_link">
+                                <a href="javascript:return false;">이용 약관</a> │ <a href="javascript:return false;">개인정보처리방침</a> │ <a href="javascript:return false;">이용안내</a>
+                            </p>
+                            <ul class="ft_sns">
+                                <li>
+                                    <div class="sns">
+                                        <a href="https://www.instagram.com/">
+                                            <img src="./img/main/ft_sns_insta.png" alt="ft_sns_insta">
+                                        </a>
+                                        <div class="sns_hover">
+                                            <a href="https://www.instagram.com/">
+                                                <img src="./img/main/ft_sns_insta_h.png" alt="ft_sns_insta">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </li>
+                                <li>
+                                    <div class="sns">
+                                    <a href="https://www.youtube.com/">
+                                        <img src="./img/main/ft_sns_youtube.png" alt="ft_sns_youtube">
+                                    </a>
+                                    <div class="sns_hover">
+                                        <a href="https://www.youtube.com/">
+                                            <img src="./img/main/ft_sns_youtube_h.png" alt="ft_sns_youtube">
+                                        </a>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sns">
+                                    <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
+                                        <img src="./img/main/ft_sns_naver.png" alt="ft_sns_naver">
+                                    </a>
+                                    <div class="sns_hover">
+                                        <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
+                                            <img src="./img/main/ft_sns_naver_h.png" alt="ft_sns_naver">
+                                        </a>
+                                    </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- footer e -->
+
+
+<!-- 스크립트 -->
+
+<!-- js 연결 -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./js/script.js"></script>
+
+
+<!-- new 슬라이드 스크립트 s -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper1 = new Swiper(".mySwiper1", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+      });
+    </script>
+  
+<!-- new 슬라이드 스크립트 e -->
+  
+<!-- discount 슬라이드 스크립트 -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="./js/script.js"></script>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper2 = new Swiper(".mySwiper2", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    });
+  </script>
+
+
+<!-- 디자인 요소 -->
+
+<script>
+	new WOW().init();
+</script>
+
+
+
+
+
+
+</body>
+</html>

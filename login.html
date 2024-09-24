@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frevibe</title>
+    <link rel="stylesheet" href="./css/login_style.css">
+    <!-- js 연결 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="./js/login_script.js"></script>
+
+    <!-- 웹폰트 적용 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!-- favicon 적용 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/frevibe_favicon.png">
+</head>
+<body>
+    
+    <!-- top s -->
+
+    <div id="top">
+        <p>* 크라우드 펀딩 절찬 진행중 *</p>
+    </div>
+
+<!-- top e -->
+
+<!-- 우측 상하 이동 버튼 -->
+    <div class="move_bt">
+        <div>
+            <a href="#top" class="bt_top">
+                <img src="./img/main/bt_top_arrow.png" alt="top_bt">
+            </a>
+        </div>
+        <div>
+            <a href="#footer_wrap" class="bt_bottom">
+            <img src="./img/main/bt_bottom_arrow.png" alt="bottom_bt">
+            </a>
+        </div>
+    </div>
+
+
+    <script>
+        $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+            $('html, body').animate({
+            scrollTop: target.offset().top
+            }, 500);//움직이는 시간 조정
+            return false;
+            }
+            }
+            });
+            });
+    </script>
+
+
+<div class="main_wrap">
+    <div id="star_wrap">
+        <div id="star_bg">
+                
+            <div id="stars">
+            </div>
+            <div id="stars2">
+            </div>
+            <div id="stars3">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- header_wrap s -->
+
+        <div id="header_wrap">
+            <div class="header">
+                <div class="header_top">
+                    <a href="#" onclick="return false;" class="hamburger-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <h1 class="logo">
+                        <a href="./index.html" class="h_logo">
+                            <img src="./img/main/h_logo.png" alt="h_logo">
+                        </a>
+                        <a href="./index.html" class="h_white">
+                            <img src="./img/main/h_logo_white.png" alt="h_logo_white">
+                        </a>
+                    </h1>
+                <ul class="h_icon">
+                    <li>
+                        <a href="#">
+                            <img src="./img/main/buy.png" alt="buy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/main/heart.png" alt="heart">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./login.html">
+                            <img src="./img/main/login.png" alt="login">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/main/search.png" alt="search">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- header_top -->
+
+            <!-- gnb s -->
+            <div id="gnb_wrapper">
+                <div class="gnb">
+                    <ul class="gnb_menu">
+                        <li class="gnb_title">
+                            <div class="sub_title_wrapper">
+                                <div class="sub_title1">
+                                    <a href="#">
+                                        <img src="./img/main/sub_title_shop.png" alt="sub_shop">
+                                    </a>
+                                </div>
+                                <div class="sub_title_hover1">
+                                    <a href="#">
+                                        <img src="./img/main/sub_title_shop_h.png" alt="sub_shop_h">
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="gnb_text gnb1">
+                                <li>
+                                    <a href="./sub1_shop.html">PROMOTION</a>
+                                </li>
+                                <li>
+                                    <a href="./sub1_shop.html">NEW</a>
+                                </li>
+                                <li>
+                                    <a href="./sub1_products.html">PRODUCTS</a>
+                                </li>
+                                <li>
+                                    <a href="./sub1_shop.html">INVEST</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_title">
+                            <div class="sub_title2">
+                                <a href="#">
+                                    <img src="./img/main/sub_title_aboutus.png" alt="sub_shop">
+                                </a>
+                            </div>
+                            <div class="sub_title_hover2">
+                                <a href="#">
+                                    <img src="./img/main/sub_title_aboutus_h.png" alt="sub_shop_h">
+                                </a>
+                            </div>
+                            <ul class="gnb_text gnb2">
+                                <li>
+                                    <a href="./sub2.html">OUR BRAND</a>
+                                </li>
+                                <li>
+                                    <a href="./sub2.html">OUR BAG</a>
+                                </li>
+                                <li>
+                                    <a href="./sub2.html">CAMPAIGN</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_title">
+                            <div class="sub_title3">
+                                <a href="#">
+                                    <img src="./img/main/sub_title_community.png" alt="sub_shop">
+                                </a>
+                            </div>
+                            <div class="sub_title_hover3">
+                                <a href="#">
+                                    <img src="./img/main/sub_title_community_h.png" alt="sub_shop_h">
+                                </a>
+                            </div>
+                            <ul class="gnb_text gnb3">
+                                <li>
+                                    <a href="./sub3.html">EVENT</a>
+                                </li>
+                                <li>
+                                    <a href="./sub3.html">NOTICE</a>
+                                </li>
+                                <li>
+                                    <a href="./sub3.html">REVIEW</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- gnb_wrapper e -->
+            </div>
+            <!-- header e -->
+        </div>
+        <!-- header_wrapper e -->
+    </div>
+
+        <!-- login s -->
+
+        <div id="login">
+
+            <div class="login_title">
+                <img src="sub/img_login/login_title.png" alt="login_title">
+            </div>
+
+            <div class="login_center">
+                <p class="login_text">카카오 계정으로 복잡한 입력없이 간편하게 로그인 또는 회원가입 하세요. </p>
+
+                <div class="kakao_bt">
+                    <a href="#">
+                        <img src="sub/img_login/kakao_bt_icon.png" alt="kakao_bt_icon">
+                        <p>카카오 간편 로그인/회원가입</p>
+                    </a>
+                </div>
+
+                <div class="g_login">
+                    <div class="line"></div>
+                    <p>또는 일반로그인</p>
+                    <div class="line"></div>
+                </div>
+
+                <div class="tabmenu">
+                    <ul>
+                        <li class="on">
+                            <a href="#" onclick="return false;">회원 로그인</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false;">비회원 주문조회</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tabcon member">
+                    <a href="#">
+                    <input type="text" placeholder="아이디" style="width:410px; height: 45px;">
+                    <input type="text" placeholder="비밀번호" style="width:410px; height: 45px;">
+                        <ul class="checkbox">
+                            <li><input type="checkbox">
+                                <p>아이디 저장하기</p></li>
+                            <li><input type="checkbox">
+                                <p>로그인 상태 저장</p></li>
+                        </ul>
+                    </a>
+                    <div class="login_bt">
+                        <a href="#" onclick="return false;">
+                            <p>로그인</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tabcon nomember"> 
+                    <a href="#" onclick="return false;">
+                        <input type="text" placeholder="주문자명 또는 받는사람" style="width:410px; height: 45px;">
+                        <input type="text" placeholder="주문번호 또는 선물번호" style="width:410px; height: 45px;">
+                    </a>
+                    <div class="search_bt">
+                        <a href="#" onclick="return false;">
+                            <p>조회하기</p>
+                        </a>
+                    </div>
+            </div>
+
+            <div class="sns_login">
+                <div class="line"></div>
+                <p>또는 SNS 로그인</p>
+                <div class="line"></div>
+            </div>
+        </div>
+
+            <div>
+                <ul class="login_bottom_sns">
+                    <li>
+                        <div>
+                            <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
+                                <img src="sub/img_login/sns_naver.png" alt="sns_naver">
+                            </a>
+                        </div>
+                        <div class="l_b_sns_hover">
+                            <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
+                                <img src="sub/img_login/sns_naver_hover.png" alt="sns_naver_hover">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                        <a href="https://www.google.com/">
+                            <img src="sub/img_login/sns_google.png" alt="sns_google">
+                        </a>
+                        </div>
+                        <div class="l_b_sns_hover">
+                        <a href="https://www.google.com/">
+                            <img src="sub/img_login/sns_google_hover.png" alt="sns_google_hover">
+                        </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                        <a href="https://www.facebook.com/?locale=ko_KR">
+                            <img src="sub/img_login/sns_facebook.png" alt="sns_facebook">
+                        </a>
+                        </div>
+                        <div class="l_b_sns_hover">
+                        <a href="https://www.facebook.com/?locale=ko_KR">
+                            <img src="sub/img_login/sns_facebook_hover.png" alt="sns_facebook_hover">
+                        </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- login 디자인 요소 -->
+
+            <div class="star_left">
+                <img src="sub/img_login/star.png" alt="star">
+            </div>
+
+            <div class="star_right">
+                <img src="sub/img_login/star.png" alt="star">
+            </div>
+        </div>
+        <!-- login e -->
+
+        <!-- footer s -->
+
+        <div id="footer_wrap">
+            <div class="footer">
+                <div class="footer_bg">
+                    <img src="./img/main/footer_bg.png" alt="footer_bg">
+                </div>
+                <div class="footer_text">
+                    <ul>
+                        <li class="ft_logo">
+                            <a href="javascript:return false;">
+                                <img src="./img/main/ft_logo.png" alt="ft_logo">
+                            </a>
+                        </li>
+                        <li>
+                            <div>
+                                <ul class="ft_text">
+                                    <li>
+                                        <h4>고객 문의</h4>
+                                        <p class="number">1588-1234</p>
+                                        <p class="email">info@frevibe.com</p>
+                                    </li>
+                                    <li>
+                                        <h4>협업 문의</h4>
+                                        <p class="number">070-1234-5678</p>
+                                        <p class="email">frevibe@frevibe.com</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ft_rights">
+                                <img src="./img/main/ft_text_logo.png" alt="ft_text_logo">
+                                │ ©2024. Frevibe all rights reserved.
+                            </div>
+                            <p class="ft_link">
+                                <a href="javascript:return false;">이용 약관</a> │ <a href="javascript:return false;">개인정보처리방침</a> │ <a href="javascript:return false;">이용안내</a>
+                            </p>
+                            <ul class="ft_sns">
+                                <li>
+                                    <div class="sns">
+                                        <a href="https://www.instagram.com/">
+                                            <img src="./img/main/ft_sns_insta.png" alt="ft_sns_insta">
+                                        </a>
+                                        <div class="sns_hover">
+                                            <a href="https://www.instagram.com/">
+                                                <img src="./img/main/ft_sns_insta_h.png" alt="ft_sns_insta">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </li>
+                                <li>
+                                    <div class="sns">
+                                    <a href="https://www.youtube.com/">
+                                        <img src="./img/main/ft_sns_youtube.png" alt="ft_sns_youtube">
+                                    </a>
+                                    <div class="sns_hover">
+                                        <a href="https://www.youtube.com/">
+                                            <img src="./img/main/ft_sns_youtube_h.png" alt="ft_sns_youtube">
+                                        </a>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sns">
+                                    <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
+                                        <img src="./img/main/ft_sns_naver.png" alt="ft_sns_naver">
+                                    </a>
+                                    <div class="sns_hover">
+                                        <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
+                                            <img src="./img/main/ft_sns_naver_h.png" alt="ft_sns_naver">
+                                        </a>
+                                    </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- footer e -->
+
+
+
+</body>
+</html>

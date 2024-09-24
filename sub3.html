@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frevibe</title>
+    <link rel="stylesheet" href="./css/sub3.css">
+
+    <!-- js 연결 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="./js/sub3.js"></script>
+
+    <!-- 웹폰트 적용 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- excelorate 폰트 -->
+    <link rel="stylesheet" href="./font/excelorate/stylesheet.css">
+
+    <!-- favicon 적용 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/frevibe_favicon.png">
+
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    
+    <!-- top s -->
+
+    <div id="top">
+        <p>* 크라우드 펀딩 절찬 진행중 *</p>
+    </div>
+
+<!-- top e -->
+
+<!-- 우측 상하 이동 버튼 -->
+    <div class="move_bt">
+        <div>
+            <a href="#top" class="bt_top">
+                <img src="./img/main/bt_top_arrow.png" alt="top_bt">
+            </a>
+        </div>
+        <div>
+            <a href="#footer_wrap" class="bt_bottom">
+            <img src="./img/main/bt_bottom_arrow.png" alt="bottom_bt">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+            $('html, body').animate({
+            scrollTop: target.offset().top
+            }, 500);//움직이는 시간 조정
+            return false;
+            }
+            }
+            });
+            });
+    </script>
+
+
+    <div id="header_wrap">
+        <div class="header">
+            <div class="header_top">
+                <a href="javascript:return false;" class="hamburger-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
+                <h1 class="logo">
+                    <a href="./index.html" class="h_logo">
+                        <img src="./img/main/h_logo.png" alt="h_logo">
+                    </a>
+                    <a href="./index.html" class="h_white">
+                        <img src="./img/main/h_logo_white.png" alt="h_logo_white">
+                    </a>
+                </h1>
+            <ul class="h_icon">
+                <li>
+                    <a href="javascript:return false;">
+                        <img src="./img/main/buy.png" alt="buy">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:return false;">
+                        <img src="./img/main/heart.png" alt="heart">
+                    </a>
+                </li>
+                <li>
+                    <a href="./login.html">
+                        <img src="./img/main/login.png" alt="login">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:return false;">
+                        <img src="./img/main/search.png" alt="search">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- header_top -->
+
+        <!-- gnb s -->
+        <div id="gnb_wrapper">
+            <div class="gnb">
+                <ul class="gnb_menu">
+                    <li class="gnb_title">
+                        <div class="sub_title_wrapper">
+                            <div class="sub_title1">
+                                <a href="#">
+                                    <img src="./img/main/sub_title_shop.png" alt="sub_shop">
+                                </a>
+                            </div>
+                            <div class="sub_title_hover1">
+                                <a href="#">
+                                    <img src="./img/main/sub_title_shop_h.png" alt="sub_shop_h">
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="gnb_text gnb1">
+                            <li>
+                                <a href="./sub1_shop.html">PROMOTION</a>
+                            </li>
+                            <li>
+                                <a href="./sub1_shop.html">NEW</a>
+                            </li>
+                            <li>
+                                <a href="./sub1_products.html">PRODUCTS</a>
+                            </li>
+                            <li>
+                                <a href="./sub1_shop.html">INVEST</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb_title">
+                        <div class="sub_title2">
+                            <a href="#">
+                                <img src="./img/main/sub_title_aboutus.png" alt="sub_shop">
+                            </a>
+                        </div>
+                        <div class="sub_title_hover2">
+                            <a href="#">
+                                <img src="./img/main/sub_title_aboutus_h.png" alt="sub_shop_h">
+                            </a>
+                        </div>
+                        <ul class="gnb_text gnb2">
+                            <li>
+                                <a href="./sub2.html">OUR BRAND</a>
+                            </li>
+                            <li>
+                                <a href="./sub2.html">OUR BAG</a>
+                            </li>
+                            <li>
+                                <a href="./sub2.html">CAMPAIGN</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb_title">
+                        <div class="sub_title3">
+                            <a href="#">
+                                <img src="./img/main/sub_title_community.png" alt="sub_shop">
+                            </a>
+                        </div>
+                        <div class="sub_title_hover3">
+                            <a href="#">
+                                <img src="./img/main/sub_title_community_h.png" alt="sub_shop_h">
+                            </a>
+                        </div>
+                        <ul class="gnb_text gnb3">
+                            <li>
+                                <a href="#event_wrap">EVENT</a>
+                            </li>
+                            <li>
+                                <a href="#notice_wrap">NOTICE</a>
+                            </li>
+                            <li>
+                                <a href="#review_wrap">REVIEW</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- gnb_wrapper e -->
+        </div>
+        <!-- header e -->
+    </div>
+    <!-- header_wrap e -->
+
+    <!-- event s -->
+
+    <div id="event_wrap">
+
+        <div class="event_title">
+            <img src="sub3/event_title.png" alt="event_title">
+        </div>
+
+        <div class="event_bg">
+                <img src="sub3/event_bg.png" alt="event_bg">
+                
+                <!-- event 내부 디자인 요소 -->
+
+                <div class="event_start">
+                    <img src="sub3/event_start.png" alt="event_start">
+                </div>
+
+                <div class="event_plastic_text">
+                    <img src="sub3/event_plastic_text.png" alt="event_plastic_text">
+                </div>
+
+                <div class="event_star">
+                    <ul>
+                        <li>
+                            <img src="sub3/event_three_star.png" alt="event_star1">
+                        </li>
+                        <li>
+                            <img src="sub3/event_three_star.png" alt="event_star1">
+                        </li>
+                        <li>
+                            <img src="sub3/event_three_star.png" alt="event_star1">
+                        </li>
+                    </ul>
+                </div>  
+
+                <div class="event_ds_coupon">
+                    <img src="sub3/event_ds_coupon.png" alt="event_ds_coupon">
+                </div>
+
+                <div class="event_white_star1">
+                    <img src="sub3/event_white_star.png" alt="event_white_star">
+                </div>
+
+                <div class="event_white_star2">
+                    <img src="sub3/event_white_star.png" alt="event_white_star">
+                </div>
+
+                <div class="event_logo">
+                    <img src="sub3/event_logo.png" alt="event_logo">
+                </div>
+
+                <div class="event_goods">
+                    <img src="sub3/event_special_goods.png" alt="event_goods">
+                </div>
+
+                <div class="event_goods_text">
+                    <img src="sub3/event_congratulation.png" alt="event_goods_text">
+                </div>
+            
+                <div class="event_end_bg">
+                    <img src="sub3/event_end_bg.png" alt="event_bg">
+                </div>
+                
+                <div class="event_pr1">
+                    <img src="sub3/event_end_pr1.png" alt="event_pr1">
+                </div>
+
+                <div class="event_pr2">
+                    <img src="sub3/event_end_pr2.png" alt="event_pr2">
+                </div>
+
+                <div class="event_pr3">
+                    <img src="sub3/event_end_pr3.png" alt="event_pr3">
+                </div>
+ 
+                <div class="event_end_text">
+                    <img src="sub3/event_end_text.png" alt="event_end_text">
+                </div>
+
+        </div>
+
+        <!-- event 버튼 -->
+
+        <div class="event_bt_wrap">
+                <a href="./login.html" class="event_bt">
+                    <img src="sub3/event_bt.png" alt="event_bt">
+                </a>
+            <div class="event_hover">
+                <a href="./login.html">
+                    <img src="sub3/event_hover.png" alt="event_hover">
+                </a>
+            </div>
+        </div>
+
+
+        <!-- 디자인요소 -->
+
+        <div class="event_star_left">
+            <img src="sub3/event_star_left.png" alt="event_star_left">
+        </div>
+
+        <div class="event_star_right">
+            <img src="sub3/event_star_right.png" alt="event_star_right">
+        </div>
+
+    </div>
+
+    <!-- event e -->
+
+    <!-- notice s -->
+
+    <div id="notice_wrap">
+        <div class="notice_title">
+            <img src="sub3/notice_title.png" alt="notice_title">
+        </div>
+        <div class="notice">
+            <ul>
+                <li>
+                    <div class="title">
+                        <div class="notice_number">05</div>
+                        <div class="title_in">프레바이브 11월 팝업스토어 오픈 예정!!!~~</div>
+                        <div class="plus"><img src="sub3/plus.png" alt="plus"></div>
+                    </div>
+                    <div class="text_info">
+                    [프레바이브 11월 팝업스토어 오픈 예정!!!~~]<br>
+                    <br>
+                    * 일시: 2024년 11월 1일 ~ 2024년 11월 31일 한달간<br>
+                    * 장소: 더현대 서울 팝업스토어 매장<br>
+                    - 프레바이브 공병 수거 이벤트 진행 예정! 현장에 비치된 프레바이브 수거함에 다쓴 화장품, 세제 등을 넣어주세요! <br>참여자 전원에게 프레바이브 ★★스페셜 굿즈★★를 드립니다.<br>
+                    <br>
+                    <hr>
+                    <br>
+                    &lt;프레바이브 팝업스토어 용기 수거통 비치 안내&gt;<br>
+                    <br>
+                    11월 한달간 프레바이브 팝업스토어가 더현대서울을 찾아옵니다!<br>
+                    팝업스토어 오픈 시, 입구에 프레바이브 용기 수거통을 비치할 예정입니다.<br>
+                    용기 수거통에는 다쓴 화장품 용기, 세제통을 넣어주세요.<br>
+                    팝업스토어 기간내 수거된 용기는 세척, 공정(자세한 사항은 홈페이지 내 About us 페이지를 참고 부탁드립니다.)<br>
+                    과정을 통해 프레바이브 BAG으로 탄생합니다.
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <div class="notice_number">04</div>
+                        <div class="title_in">★★★ 지구를 지킬 프레레인저 5기 모집!!!! ★★★</div>
+                        <div class="plus"><img src="sub3/plus.png" alt="plus"></div>
+                    </div>
+                    <div class="text_info">
+                        [프레바이브와 함께 바다를 구할 프레레인저를 모집합니다!!!]<br>
+                        <br>
+                        지난 수 십년 간 플라스틱 사용량이 크게 늘었고, 바다로 유입되는 쓰레기의 60~80%가 플라스틱 쓰레기라고 알려져 있습니다.<br>
+                        플라스틱 쓰레기 중에서도 미세플라스틱은 더 큰 문제입니다. 매우 작아 수거가 어렵고 해양생물들이 먹이로 잘못 알고 섭취하기 때문입니다. <br>미세플라스틱을 먹은 어류를 섭취하는 우리에게도 피해가 이어지고 있습니다.<br>
+                        <br>
+                        &lt;쓰레기 대신 바다 생물이 돌아오기 위해&gt;<br>
+                        전국 각지에서 모인 프레레인저와 함께 미세플라스틱 수거 캠페인을 진행합니다. 아이들 뿐 아니라 누구든 쉽게 할 수 있습니다. <br>
+                        직접 해양 쓰레기를 치우고, 미세플라스틱을 줍습니다. 함께 한 시민들이 고민에 머물지 않고, 행동할 수 있는 캠페인으로 진행합니다. <br>
+                        우리는 플라스틱 쓰레기를 걷어내 바다의 생명을 살립니다.
+                        <br>
+                        <br>
+                        <hr>
+                        <br>
+                        * 자격: 지구를 지키고자 하는 소중한 마음가짐<br>
+                        * 일시: 11월 9일(토)~10일(일) / 11월 23일(토)~24일(일)<br>
+                        * 장소: 인천 을왕리 해수욕장
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <div class="notice_number">03</div>
+                        <div class="title_in">[프레바이브 재활용 용기 수거 안내]</div>
+                        <div class="plus"><img src="sub3/plus.png" alt="plus"></div>
+                    </div>
+                    <div class="text_info">
+                        다 쓴 화장품 용기, 세제 등 재활용이 필요한 공병을 모아서 수거 신청을 해주세요! <br>
+                        수거된 재활용품을 모아 세척, 공정 과정을 거쳐 제품을 제작하게 됩니다. <br>
+                        지구를 생각하는 여러분의 힘으로 아름다운 프레바이브 BAG이 탄생합니다! <br>
+                        <br>
+                        <br>
+                        &lt;공병 수거 신청 방법&gt;<br>
+                        1. 로그인 후 프레바이브 공병 수거 이벤트 페이지에서 공병 수거 신청하기 버튼을 누른다.<br>
+                        2. 공병 수거가 필요한 주소를 입력하여 신청한다.<br>
+                        3. 안쓰는 공병을 세척(세척법: About us 페이지 QR코드를 통해 확인 부탁드립니다.)하여 모은다.<br>
+                        4. 신청 기간 중, 안쓰는 상자 안에 수거를 원하는 공병을 담고 상자 위에 지워지지 않는 펜으로 '프레바이브 공병 수거'라고 적고 주소지 입구에 배치한다. <br>
+                        5. 프레바이브에서 공병 수거가 완료되면 이벤트 페이지에서 참여 현황을 확인한다.<br>
+                        <br>
+                        ※ 공병 수거는 신청 후 영업일 기준 5일~일주일 소요될 수 있습니다. 해당 일자에 도달했음에도 수거가 되지 않는 경우, 고객센터로 문의 부탁드립니다.<br>
+                        ※ 공병 수거 이벤트 참여 현황의 경우, 공병 수거 완료 후 자동 적용될 예정이며, 최대 14일이내 처리될 예정입니다. 
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <div class="notice_number">02</div>
+                        <div class="title_in">교환 / 반품</div>
+                        <div class="plus"><img src="sub3/plus.png" alt="plus"></div>
+                    </div>
+                    <div class="text_info">
+                    [교환 접수 절차 및 유의사항]<br>
+                    <br>
+                    STEP1. 온라인을 통해 교환을 진행해주세요.
+                    단순 변심에 따른 교환의 경우 배송비 6,000원을 선결제하셔야 합니다.<br>
+    
+                    STEP2. 교환품을 포장하여주세요.<br>
+    
+                    교환품 수거는 프레바이브에서 진행합니다.
+                    구매 패키지상자에 포장된 상태로 기다리시면 기사님께 회수요청을 드리겠습니다.<br>
+    
+                    STEP3. 제품을 검수 후 이전에 요청하신 제품으로 즉시 발송하겠습니다.<br>
+                    <br>
+                    ※유의사항
+                    <br>
+                    제품 수령 후 7일 이내에만 교환이 가능하며, 받으신 상태 (행택 및 포장) 그대로 이어야 합니다.<br>
+    
+                    여러 제품을 구매하신 경우(일괄 배송), 해당 반품 제품에 대해서는 일괄적으로 반품을 해주셔야 하며 아닐 경우 거부할 권리가 있습니다.<br>
+                    <br>
+                    유선상으로 접수된 교환 요청은 프레바이브 계좌로 입금 후 진행 가능합니다.<br>
+    
+                    또한 회수 제품 도착 후 검수 완료까지 영업일 기준 1~2일 정도 소요됩니다.<br>
+    
+                    교환요청을 하지 않고 제품을 업체에 먼저 발송하신 경우, 교환 신청 자체가 누락되어 처리가 지연될 수 있습니다.<br>
+    
+                    배송된 제품이 불량, 오배송인 경우 배송비 전액을 당사가 부담하고 교환처리 해드립니다.
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <div class="notice_number">01</div>
+                        <div class="title_in">기본 배송 안내</div>
+                        <div class="plus"><img src="sub3/plus.png" alt="plus"></div>
+                    </div>
+                    <div class="text_info">
+                        - 평일 (월~금)에만 출고가 가능합니다. (토~일요일, 공휴일 제외)<br>
+                        - 당일 주문 집계 마감은 오후 12시입니다. 이후 주문은 고객센터(1588-1234)로 연락주세요.<br>
+                        ※ 택배사의 사정에 의해 지연될 수 있으니 이 점 양해 말씀 드립니다.<br>
+                        <br>
+                        - 50,000원 이상 구매시 무료배송이며 50,000원 미만시 3,000원 별도의 배송비가 자동 청구 됩니다. (국내 전 지역 동일 요금 적용)<br>
+                        ※ 지역에 따라 배송 기간이 상이할 수 있습니다.<br>
+                        <br>
+                        ※ 유의사항<br>
+    
+                        1) 배송 메세지 작성시 분실 위험이 있는 장소는 피해 주세요 (예 : 부재시 문 앞, 계단 앞, 소화전 등)
+    
+                        상품 분실시 고객의 귀책사유가 됩니다.<br>
+    
+                        2) 날짜/시간 지정이 어렵고 택배업체, 배송 기사님의 스케줄에 따라 배송되오니 이 점 참고해 주세요.
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- notice 디자인 요소 -->
+         <div class="notice_star_top">
+            <img src="sub/img_login/star.png" alt="notice_star_top">
+         </div>
+         <div class="notice_star_bt">
+            <img src="sub/img_login/star.png" alt="notice_star_bt">
+         </div>
+         <div class="notice_right_text">
+            <img src="./img/main/pp_frevibe_text.png" alt="notice_right_text">
+         </div>
+    </div>
+
+    <!-- notice e -->
+
+    <!-- review s -->
+
+    <div id="review_wrap">
+        <div class="review_title">
+            <img src="sub3/review_title.png" alt="review_title">
+        </div>
+
+            <div class="review_main">
+                <img src="sub3/review_main.png" alt="review_main">
+            </div>
+
+            <div class="review_warning">
+                <img src="sub3/review_warning.png" alt="review_warning">
+            </div>
+
+            <div class="error">
+                <img src="sub3/system_error.png" alt="system_error">
+            </div>
+
+        <div class="coupon">
+            <ul>
+                <li class="coupon1">
+                    <div class="coupon1_text">
+                        <img src="sub3/coupon1.png" alt="coupon1_text">
+                    </div>
+                </li>
+                <li class="coupon2">
+                    <div class="coupon2_text">
+                        <img src="sub3/coupon2.png" alt="coupon1_text">
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+        <!-- 디자인 요소 -->
+        <div class="coupon_arrow">
+            <img src="sub3/coupon_arrow.png" alt="coupon_arrow">
+         </div>
+
+         <div class="review_circle_star">
+            <img src="sub3/review_circle_star.png" alt="review_circle_star">
+         </div>
+
+         <div class="review_rigth_star1">
+            <img src="sub1_shop/pr_star1.png" alt="review_rigth_star1">
+         </div>
+
+         <div class="review_rigth_star2">
+            <img src="sub1_shop/pr_star1.png" alt="review_rigth_star1">
+         </div>
+
+         <div class="review_right_check">
+            <img src="./img/main/weare_check.png" alt="review_check">
+         </div>
+
+         <div class="review_left_check">
+            <img src="./img/main/sub_check_right.png" alt="review_left_check">
+         </div>
+
+    </div>
+
+    <!-- review e -->
+
+
+    <!-- last_modal s-->
+    <div class="last_modal_wrap">
+        <div class="last_modal">
+
+            <div class="last_modal_text">
+                <img src="sub3/last_modal_text.png" alt="last_modal_text">
+                <div class="last_right_text">
+                   <ul>
+                        <li>
+                            <a href="javascript:return false;">
+                                <img src="sub3/last_bt_img1.png" alt="last_right_img">
+                            </a>
+                        </li>
+                        <li class="last_pr_name">
+                            프레브 에어백 드럼 그린
+                        </li>
+                   </ul>
+                   <div class="gray_box">
+                        <ul>
+                            <li>김초*</li>
+                            <li>2024.09.05.</li>
+                        </ul>
+                   </div> 
+                   <div class="line"></div>
+                   <div class="right_modal_text">
+                        <p>가방에 이것저것 많이 넣어다니는      바리바리바리스타입니다.<br>
+                            힙하면서도 실용성이 좋은 가방을 찾다가 구매하게 되었는데<br>
+                            정말정말 10000000% 만족합니다...<br>
+                            저처럼 바리바리바리스타 분들 고민하지 말고 바로 지르세요.<br>
+                            정말 후회없는 소비가 되실 겁니다!!!!!!<br>
+                            초록색을 좋아해서 이번에는 초록으로 사긴 했는데<br>
+                            정말 색깔별로 쟁여두고 싶네요...!!!!    
+                            </p>
+                   </div>
+                   <div class="line"></div>
+                   <div class="last_modal_icon">
+                        <ul>
+                            <li>
+                                <div class="icon_text1">
+                                    <a href="javascript:return false;">
+                                        <div class="like_bt">
+                                            <img src="sub3/last_modal_like.png" alt="like">
+                                        </div>
+                                    </a>
+                                    <a href="javascript:return false;">
+                                        <div class="like_hover">
+                                            <img src="sub3/last_modal_like_hover.png" alt="modal_like_hover">
+                                        </div>
+                                    </a>
+                                    <p>유용해요</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon_text2">
+                                    <a href="javascript:return false;">
+                                        <div class="x_bt">
+                                            <img src="sub3/last_modal_x.png" alt="x"> 
+                                        </div>
+                                    </a>
+                                    <a href="javascript:return false;">
+                                        <div class="x_hover">
+                                            <img src="sub3/last_modal_x_hover.png" alt="modal_x_hover">
+                                        </div>
+                                    </a>
+                                    <p>신고ㆍ차단</p>
+                                </div>
+                            </li>
+                        </ul>
+                   </div>
+    
+                   <div class="modal_close">
+                        <a href="javascript:return false;">
+                            <img src="sub3/last_modal_close.png" alt="modal_close">
+                        </a>
+                   </div>
+    
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    <!-- last modal e -->
+
+
+    <!-- last_review s-->
+
+    <div class="last_review_wrap">
+        <div class="last_border">
+            <ul>
+                <li class="last_wrap">
+                    <div class="last_inner1">
+                        <a href="javascript:return false;" class="last_click_img">
+                            <img src="sub3/last1.png" alt="last1">
+                        
+                        <img src="sub3/last_star.png" alt="last_star" class="five_star">
+                        <p class="last_pr_text">가방에 이것저것 많이 넣어다니는 바리바리바리스타... </p>
+                        <ul class="last_pr_name">
+                            <li>
+                                <a href="#">
+                                    <img src="sub3/last_bt_img1.png" alt="last_bt_img1">
+                                </a>
+                            </li>
+                            <li class="">
+                                <p>프레브 에어백 드럼 그린</p>
+                            </li>
+                        </ul>
+                        </a>
+                    </div>
+                </li>
+                <li class="last_wrap">
+                    <div class="last_inner">
+                        <a href="#">
+                            <img src="sub3/last2.png" alt="last2">
+                        </a>
+                        <img src="./img/sub3/last_star.png" alt="last_star" class="five_star">
+                        <p class="last_pr_text">업사이클링 제품에 관심 있어서 구매했는데 어쩜 이렇게...</p>
+                        <ul class="last_pr_name">
+                            <li>
+                                <a href="#">
+                                    <img src="sub3/last_bt_img2.png" alt="last_bt_img1">
+                                </a>
+                            </li>
+                            <li>
+                                <p>네온사이클 핑크</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="last_wrap">
+                    <div class="last_inner">
+                        <a href="#">
+                            <img src="sub3/last3.png" alt="last3">
+                        </a>
+                        <img src="sub3/last_star.png" alt="last_star" class="five_star">
+                        <p class="last_pr_text">매일 백팩을 매고 다니는 학생입니다. 이것저것 수납도... </p>
+                        <ul class="last_pr_name">
+                            <li>
+                                <a href="#">
+                                    <img src="sub3/last_bt_img3.png" alt="last_bt_img1">
+                                </a>
+                            </li>
+                            <li>
+                                <p>FutureX 베이지</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="last_review_title">
+            <img src="sub3/last_review_title.png" alt="last_review_title">
+        </div>
+
+
+    </div>
+
+    <!-- last_review e -->
+
+        
+    <!-- bottom_review s -->
+
+    <div class="bt_review">
+
+      
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="sub3/bt_review1.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="sub3/bt_review2.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="sub3/bt_review3.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="sub3/bt_review4.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="sub3/bt_review5.png">
+                </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                });
+            </script>
+
+            <div class="review_symbol">
+                <img src="sub1_shop/new_left_symbol.png" alt="review_symbol">
+            </div>           
+
+    </div>
+
+    <!-- bottom_review e -->
+
+    <!-- footer s -->
+
+    <div id="footer_wrap">
+        <div class="footer">
+
+            <div class="footer_bg_top">
+                <img src="./img/main/footer_bg_top.png" alt="footer_bg_top">
+            </div>
+
+            <div id="star_wrap">
+                <div id="star_bg2">
+            
+                    <div id="stars">
+                    </div>
+                    <div id="stars2">
+                    </div>
+                    <div id="stars3">
+                    </div>
+            
+                </div>
+            </div>
+
+
+            <div class="footer_bg">
+                <img src="./img/main/footer_bg.png" alt="footer_bg">
+            </div>
+            <div class="footer_text">
+                <ul>
+                    <li class="ft_logo">
+                        <a href="javascript:return false;">
+                            <img src="./img/main/ft_logo.png" alt="ft_logo">
+                        </a>
+                    </li>
+                    <li>
+                        <div>
+                            <ul class="ft_text">
+                                <li>
+                                    <h4>고객 문의</h4>
+                                    <p class="number">1588-1234</p>
+                                    <p class="email">info@frevibe.com</p>
+                                </li>
+                                <li>
+                                    <h4>협업 문의</h4>
+                                    <p class="number">070-1234-5678</p>
+                                    <p class="email">frevibe@frevibe.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ft_rights">
+                            <img src="./img/main/ft_text_logo.png" alt="ft_text_logo">
+                            │ ©2024. Frevibe all rights reserved.
+                        </div>
+                        <p class="ft_link">
+                            <a href="javascript:return false;">이용 약관</a> │ <a href="javascript:return false;">개인정보처리방침</a> │ <a href="javascript:return false;">이용안내</a>
+                        </p>
+                        <ul class="ft_sns">
+                            <li>
+                                <div class="sns">
+                                    <a href="https://www.instagram.com/">
+                                        <img src="./img/main/ft_sns_insta.png" alt="ft_sns_insta">
+                                    </a>
+                                    <div class="sns_hover">
+                                        <a href="https://www.instagram.com/">
+                                            <img src="./img/main/ft_sns_insta_h.png" alt="ft_sns_insta">
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </li>
+                            <li>
+                                <div class="sns">
+                                <a href="https://www.youtube.com/">
+                                    <img src="./img/main/ft_sns_youtube.png" alt="ft_sns_youtube">
+                                </a>
+                                <div class="sns_hover">
+                                    <a href="https://www.youtube.com/">
+                                        <img src="./img/main/ft_sns_youtube_h.png" alt="ft_sns_youtube">
+                                    </a>
+                                </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sns">
+                                <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
+                                    <img src="./img/main/ft_sns_naver.png" alt="ft_sns_naver">
+                                </a>
+                                <div class="sns_hover">
+                                    <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
+                                        <img src="./img/main/ft_sns_naver_h.png" alt="ft_sns_naver">
+                                    </a>
+                                </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<!-- footer e -->
+
+
+
+
+</body>
+</html>
