@@ -160,7 +160,7 @@ body {
 /* header_wrap s  */
 
 .main_wrap {
-    width: 100%;
+/*     width: 100%; */
     height:947px;
     background-image: url(../img/main/main_banner_bg.png);
     background-position: center center;
