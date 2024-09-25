@@ -45,6 +45,11 @@ body {
 
 /* 스크롤바 형태 변형 e */
 
+
+#all{
+    min-width: 1320px;
+}
+
 /* top s */
 
 #top {
