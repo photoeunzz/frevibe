@@ -57,6 +57,10 @@ header ul li {
     list-style: none;
 } */
 
+#all{
+    min-width: 1320px;
+}
+
 
 #header_wrap {
     width:100%;
@@ -69,6 +73,7 @@ header ul li {
     backdrop-filter: blur(5px);
     z-index:1200;
     /* display: none; */
+    min-width: 1320px;
 }
 
 .header{
@@ -207,6 +212,7 @@ header ul li {
     visibility: hidden;
     transition:0.3s;
     box-shadow: 0 2px 10px rgba(255, 255, 255, 0.5);
+    min-width: 1320px;
 }
 
 
@@ -1221,6 +1227,7 @@ header ul li {
     left:50%;
     transform: translate(-50%);
     color:#fff;
+    z-index: 100;
 }
 
 .footer_text>ul{
