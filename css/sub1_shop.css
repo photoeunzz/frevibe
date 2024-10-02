@@ -1182,7 +1182,7 @@ body {
 
 #pouch_wrap{
     position:relative;
-    width:1920px;
+    width:100%;
     margin:200px auto;
 }
 
@@ -1261,7 +1261,8 @@ body {
 .pouch_circle{
     position:absolute;
     top:20px;
-    left:0;
+    left:50%;
+    transform: translateX(-50%);
     z-index:50;
     opacity:0.5;
 }
@@ -1271,6 +1272,7 @@ body {
     top:160px;
     left:200px;
     animation: pouch_text1 20s linear infinite;
+    z-index: 100;
 }
 
 @keyframes pouch_text1{
@@ -1292,6 +1294,7 @@ body {
     top:300px;
     right:200px;
     animation: pouch_text2 15s linear infinite;
+    z-index: 100;
 }
 
 @keyframes pouch_text2{
